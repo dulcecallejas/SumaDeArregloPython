@@ -1,0 +1,43 @@
+
+# Definicion de la funcion que suma los números enteros del arreglo  
+
+def SumaArreglo (enteros):
+ 
+   suma = int(0)
+   for i in range(tamaño):
+      suma = suma + enteros[i]
+   return suma
+
+# Crea una lista vacía al inicio
+
+enteros = []
+
+# Define un tamaño9 para la lista
+
+while True:
+   print ("Escribe un número entero>1 y <1000 para el tamaño del arreglo ==>")
+   tamaño = int(input())
+   if tamaño >= 1000 or tamaño <= 1:
+      print ("Leíste bien?")
+   else:
+       print ("Muy bien")
+       break
+   
+ # Agrega datos a la lista
+
+for i in range(tamaño):
+     print (i+1, "Ingrese un número entero para el arreglo==>")
+     entero = int(input())
+
+     enteros.append(entero)
+   
+
+# Imprime la suma
+
+print ("El resultado de la suma del arreglo es ==>", SumaArreglo (enteros))
+
+# Imprime los números del arreglo
+
+print ("Éstos son los numeros que ingresaste==>")
+for i in range(tamaño):
+    print (" ", enteros[i])
